@@ -10,14 +10,14 @@ $thispage = basename(__FILE__);
 </head>
 
 <body>
-    <?php include("includes/nav.php");?>
+    <?php include("includes/nav.php"); ?>
 
-    <div class="form action=">
+    <div class="form">
         <p>Login</p>
-        <form>
+        <form method="post" action="login.php">
             <input type="text" name="username" placeholder="username">
             <input type="password" name="password" placeholder="password">
-            <button>Login</button>
+            <button type="submit">Login</button>
             <p class="message">Not registered? <a href="SignUp.php">Create an account</a></p>
         </form>
     </div>

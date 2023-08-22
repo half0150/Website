@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url(LoginBackground.jpg) no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #06C5CF;
+}
+
+.navbar li a.active {
+    background-color: #1ADBE5;
+}
+
+.homepage {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    opacity: 99%;
+    max-width: 300px;
+    margin: 150px auto;
+    padding: 20px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+
+.homepage h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.homepage p {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.explore-button {
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: 0;
+    border-radius: 10px;
+    background: #1ADBE5;
+    display: inline-block;
+    padding: 15px 25px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #06C5CF;
+}

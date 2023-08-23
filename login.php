@@ -16,9 +16,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     if (password_verify($password, $hashed_password)) {
         echo 1;
     }
-
+    
+    
     
 }
-
-
 

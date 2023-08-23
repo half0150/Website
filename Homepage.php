@@ -11,9 +11,12 @@ $thispage = basename(__FILE__);
 
 <body>
 <?php include("includes/nav.php");?>
+    
+    
+    <h1 class="welcome">Welcome</h1>
 
     <div class="homepage">
-        <h1>Welcome to My Website</h1>
+        <h2>Welcome to My Website</h2>
         <p>Explore and discover amazing content.</p>
         <a href="#" class="explore-button">Explore Now</a>
     </div>

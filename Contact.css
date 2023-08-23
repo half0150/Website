@@ -1,0 +1,22 @@
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 58px;
+}
+
+.contact {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    background: #4e4e4e;
+    opacity: 95%;
+    max-width: 800px; 
+    margin: 75px auto 0;
+    padding: 50px; 
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 30px;
+    font-size: 24px; 
+}
+

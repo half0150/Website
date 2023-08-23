@@ -47,7 +47,7 @@ body {
     border-radius: 10px;
 }
 
-.homepage h1 {
+.homepage h2 {
     font-size: 24px;
     margin: 10px 0;
 }
@@ -73,4 +73,10 @@ body {
 
 .explore-button:hover {
     background-color: #06C5CF;
+}
+
+.welcome{
+    color: white;
+    text-align: center;
+    font-size: 58px;
 }

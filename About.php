@@ -1,28 +1,25 @@
 <?php
 
 $thispage = basename(__FILE__);
+?>
+<!DOCTYPE html>
 
-echo '<!DOCTYPE html>
+
 <link rel="stylesheet" type="text/css" href="about.css">
+
+
 
 <html>
 
 <head>
-    <title>AboutPage</title>
+    <title>About</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
+
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="Homepage.php">Home</a></li>
-            <li><a href="index.php">Login</a></li>
-            <li><a href="About.php" class="active">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-        
+  
+        <?php include("includes/nav.php"); ?>
     
 
 

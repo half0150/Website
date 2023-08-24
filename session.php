@@ -19,7 +19,7 @@ if (!isset($_SESSION['username'])) {
     <?php include("includes/nav.php"); ?>
 
     <div class="profile">
-        <p>Welcome, <?php echo $_SESSION['username']; ?>!</p>
+        <h1>Welcome, <?php echo $_SESSION['username']; ?>!</h1>
         <a href="LogOutSession.php">Log Out</a>
     </div>
 </body>

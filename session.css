@@ -38,4 +38,9 @@ body {
 .profile{
     color: white;
     font-size: 25px;
+    padding: 25px;
+    margin: 20px;
+    width: 250px;
+    background-color: grey;
+    text-align: center;
 }

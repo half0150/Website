@@ -9,11 +9,11 @@
 <body>
     <nav>
         <ul class="navbar">
-            <li><a href="Homepage.php">Home</a></li>
-            <li><a href="index.php" class="active">Login</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="LogOn.php" class="active">Login</a></li>
             <li><a href="About.php">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="Services.php">Services</a></li>
+            <li><a href="Contact.php">Contact</a></li>
         </ul>
     </nav>
 

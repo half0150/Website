@@ -5,28 +5,33 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $password = $_POST['password'];
 
     require_once 'con.php';
-   
-    $sql = "SELECT id, password_hash "
-            . "FROM users "
-            . "WHERE username = '$username'";
-    $result = $dbCon->query($sql);
-    $row = $result->fetch_object();
-    $hashed_password = $row->password_hash;
 
-    if (password_verify($password, $hashed_password)) {
-        echo '<script>
-        window.location="index.php";
-        </script>';
-    } else{
-        echo '<script>
-        alert("Wrong username or password");
-        </script>';
-        echo '<script>
-            window.location="LogOn.php";
-            </script>';
+    $sql = "SELECT id, password_hash FROM users WHERE username = ?";
+    $stmt = $dbCon->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+
+    if ($result->num_rows === 1) {
+        $row = $result->fetch_object();
+        $hashed_password = $row->password_hash;
+
+        if (password_verify($password, $hashed_password)) {
+            session_start();
+            $_SESSION['username'] = $username;
+            header("Location: session.php");
+            exit();
+        } else {
+            // Redirect with an error message
+            header("Location: LogOn.php?error=invalid");
+            exit();
+        }
+    } else {
+        // Redirect with an error message
+        header("Location: LogOn.php?error=notfound");
+        exit();
     }
-    
-    
-    
 }
 
+?>

@@ -1,14 +1,13 @@
 <?php
 $thispage = basename(__FILE__);
 ?>
+
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Login/SignUp</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
-
 <body>
     <?php include("includes/nav.php"); ?>
 
@@ -22,3 +21,4 @@ $thispage = basename(__FILE__);
         </form>
     </div>
 </body>
+</html>

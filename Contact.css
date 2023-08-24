@@ -1,7 +1,8 @@
+@import url(https://db.onlinewebfonts.com/c/33be5a69beaf2663834a76d643ad50ec?family=Prophet-Medium);
 h1 {
     color: white;
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    font-family: "Prophet-Medium";
     font-size: 58px;
 }
 

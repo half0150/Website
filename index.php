@@ -5,20 +5,21 @@ $thispage = basename(__FILE__);
 <html>
 
 <head>
-    <title>SignUp</title>
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="HomepageStyle.css">
 </head>
 
 <body>
-    <?php include("includes/nav.php"); ?>
+<?php include("includes/nav.php");?>
+    
+    
+    <h1 class="welcome">Welcome</h1>
 
-    <div class="form">
-        <p>Login</p>
-        <form method="post" action="login.php">
-            <input type="text" name="username" placeholder="username">
-            <input type="password" name="password" placeholder="password">
-            <button type="submit">Login</button>
-            <p class="message">Not registered? <a href="SignUp.php">Create an account</a></p>
-        </form>
+    <div class="homepage">
+        <h2>Welcome to My Website</h2>
+        <p>Explore and discover amazing content.</p>
+        <a href="explore.php" class="explore-button">Explore Now</a>
     </div>
 </body>
+
+</html>

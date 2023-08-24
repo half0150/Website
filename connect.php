@@ -14,7 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['Sign_Up'])) {
 
         $query = mysqli_query($conn, $sql);
         if ($query) {
-            echo 'Success';
+            echo '<script>
+                alert("You have been logged in");
+                </script>';
+            echo '<script>
+                window.location="index.php";
+                </script>';
         } else {
             echo 'Error: ' . mysqli_error($conn);
         }

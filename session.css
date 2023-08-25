@@ -38,9 +38,14 @@ body {
 .profile{
     color: white;
     font-size: 25px;
-    padding: 25px;
+    padding: 30px;
     margin: 20px;
-    width: 250px;
+    width: 700px;
     background-color: grey;
     text-align: center;
+    position: relative;
+}
+
+.pictures{
+    position: absolute;
 }

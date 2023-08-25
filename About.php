@@ -1,5 +1,4 @@
 <?php
-
 $thispage = basename(__FILE__);
 ?>
 <!DOCTYPE html>
@@ -11,28 +10,37 @@ $thispage = basename(__FILE__);
 
 <html>
 
-<head>
-    <title>About</title>
-    <link rel="stylesheet" type="text/css" href="Style.css">
-</head>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
 
 
-<body>
-  
+    <body>
+
         <?php include("includes/nav.php"); ?>
-    
 
 
-</body>
 
-<h1>About Us</h1>
 
-<div class="about">
-        
-        <p class="abouttext">Risus nullam eget felis eget nunc lobortis mattis aliquam faucibus. Quis hendrerit dolor magna eget est lorem ipsum. Cursus risus at ultrices mi tempus imperdiet nulla. Diam quam nulla porttitor massa id. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Malesuada pellentesque elit eget gravida cum sociis natoque. Aliquet bibendum enim facilisis gravida neque convallis. At consectetur lorem donec massa sapien faucibus et molestie ac. Vulputate eu scelerisque felis imperdiet proin fermentum.
 
-Ipsum nunc aliquet bibendum enim. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Neque ornare aenean euismod elementum nisi quis. Amet nulla facilisi morbi tempus iaculis. Mauris vitae ultricies leo integer malesuada nunc vel risus. Id donec ultrices tincidunt arcu non. Libero volutpat sed cras ornare arcu dui vivamus arcu. Ultrices mi tempus imperdiet nulla. Posuere ac ut consequat semper viverra.</p>
-        
+        <h1>About Us</h1>
+
+        <div class="about">
+
+            <h3>About Us - Polar Bear Ventures: Navigating Innovation with Arctic Excellence</h3>
+            <p class="abouttext">
+                At Polar Bear Ventures, we believe that innovation is the compass that guides businesses through uncharted territories, and excellence is the North Star that leads to enduring success. Our journey began with a vision: to embody the remarkable qualities of the polar bear – strength, adaptability, and a relentless pursuit of greatness. 
+                <br>
+                <br>
+            <h3>Our Story:</h3>
+            Founded in [2005], Polar Bear Ventures emerged from a collective passion for driving positive change in the business landscape. Our founders, each with a unique set of skills and a shared commitment to innovation, embarked on a mission to help businesses evolve, grow, and flourish.
+            <br>
+            <br>
+            <h3>Our Philosophy:</h3>
+            Just as polar bears thrive in the harshest environments, we embrace challenges as opportunities for growth. Our philosophy revolves around the idea that every obstacle can be transformed into a stepping stone toward success. This approach shapes everything we do – from our strategies and solutions to our client relationships.
+        </p>
+
     </div>
-
+</body>
 </html>';

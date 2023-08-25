@@ -7,6 +7,12 @@ h1 {
     font-size: 58px;
 }
 
+h3{
+    color: white;
+    text-align: center;
+    font-family: "Prophet-Medium";
+}
+
 .about {
     color: white;
     font-family: "Roboto", sans-serif;

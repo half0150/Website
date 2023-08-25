@@ -22,6 +22,11 @@ if (!isset($_SESSION['username'])) {
         <h1>Welcome, <?php echo $_SESSION['username']; ?>!</h1>
         <a href="LogOutSession.php">Log Out</a>
     </div>
+    
+    
+    <div class="pictures">
+    <<img src="Isbjorn_unge.jpg" alt="isbjornUnge" style="width:500px;height:400px;"/>
+    </div>
 </body>
 
 </html>

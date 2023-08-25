@@ -30,7 +30,7 @@ if (!isset($_SESSION['username'])) {
     
     
     <div class="pictures">
-    <<img src="Isbjorn_unge.jpg" alt="isbjornUnge" style="width:500px;height:400px;"/>
+    <img src="Isbjorn_unge.jpg" alt="isbjornUnge" style="width:500px;height:400px;"/>
     </div>
 </body>
 

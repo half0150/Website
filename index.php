@@ -16,7 +16,7 @@ $thispage = basename(__FILE__);
     <h1 class="welcome">Welcome</h1>
 
     <div class="homepage">
-        <h2>Welcome to My Website</h2>
+        <h2>Welcome to Our Website</h2>
         <p>Explore and discover amazing content.</p>
         <a href="explore.php" class="explore-button">Explore Now</a>
     </div>

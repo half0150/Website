@@ -16,6 +16,21 @@ $thispage = basename(__FILE__);
     <h1 class="Explore">Explore Amazing Content Here</h1>
 
     
+    <div class="text">
+        
+        <p>
+            
+            
+        </p>    
+        
+        <img src="Isbjorn_unge.jpg" width="650px" height="450px"<head>
+
+        </head> <head>
+
+        </head> 
+        
+    </div>
+    
 </body>
 
 </html>

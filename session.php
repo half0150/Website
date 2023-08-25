@@ -18,10 +18,15 @@ if (!isset($_SESSION['username'])) {
 <body>
     <?php include("includes/nav.php"); ?>
 
-    <div class="profile">
-        <h1>Welcome, <?php echo $_SESSION['username']; ?>!</h1>
-        <a href="LogOutSession.php">Log Out</a>
-    </div>
+    
+
+<script>
+    const logoutLink = document.querySelector('a[href="LogOutSession.php"]');
+    if (logoutLink) {
+        logoutLink.textContent = 'Logout';
+    }
+</script>
+
     
     
     <div class="pictures">

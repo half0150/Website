@@ -52,3 +52,29 @@ body {
     font-family: "Prophet-Medium";
     font-size: 35px;
 }
+
+.change{
+    color: white;
+    font-family: "Prophet-Medium";
+    font-size: 30px;
+    text-align: center;
+    margin-top: 200px;
+}
+form input{
+    outline: 0;
+    border-radius: 10px;
+    background: #f2f2f2;
+    width: 40%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+
+button{
+    font-size: 25px;
+    margin-top: 45px;
+}

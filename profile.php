@@ -21,9 +21,25 @@ if (!isset($_SESSION['username'])) {
         <div class="title">
             <h1>This is your profile</h1>
 
-
-            <p>Welcome, <?php echo $_SESSION['username']; ?>!</p>
-            <p>Your email: <?php echo $_SESSION['email']; ?></p>
+            
+            <p>Your current username: <?php echo $_SESSION['username']; ?></p>
+            <p>Your current email: <?php echo $_SESSION['email']; ?></p>
+            
+            </div>
+        
+        <div class="change">
+        <p>Change your email or password:</p>
+        
+        <form method="post">
+            <input placeholder=" enter your new email"/>   
+            <input placeholder=" enter your new password"/>
+            <input placeholder="enter your old password"/>
+            
+            
+        </form>
+        <button>Submit</button>
+        
         </div>
+        
     </body>
 </html>

@@ -6,7 +6,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
     require_once 'con.php';
 
-    $sql = "SELECT id, password_hash FROM users WHERE username = ?";
+    $sql = "SELECT id, email ,password_hash FROM users WHERE username = ?";
     $stmt = $dbCon->prepare($sql);
     $stmt->bind_param("s", $username);
     $stmt->execute();
@@ -20,6 +20,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         if (password_verify($password, $hashed_password)) {
             session_start();
             $_SESSION['username'] = $username;
+            $_SESSION['email'] = $row->email;
             header("Location: session.php");
             exit();
         } else {

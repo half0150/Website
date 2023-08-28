@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
 }
 
 .navbar li {
@@ -35,17 +36,51 @@ body {
     background-color: #1ADBE5;
 }
 
-.profile{
-    color: white;
-    font-size: 25px;
-    padding: 30px;
-    margin: 20px;
-    width: 700px;
-    background-color: grey;
-    text-align: center;
+.homepage {
+    font-family: "Roboto", sans-serif;
     position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    opacity: 99%;
+    max-width: 300px;
+    margin: 150px auto;
+    padding: 20px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
 }
 
-.pictures{
-    position: absolute;
+.homepage h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.homepage p {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.explore-button {
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: 0;
+    border-radius: 10px;
+    background: #1ADBE5;
+    display: inline-block;
+    padding: 15px 25px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #06C5CF;
+}
+
+.welcome{
+    color: white;
+    text-align: center;
+    font-size: 58px;
+    font-family: "Prophet-Medium";
 }

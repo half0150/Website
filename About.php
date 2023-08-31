@@ -2,17 +2,12 @@
 $thispage = basename(__FILE__);
 ?>
 <!DOCTYPE html>
-
-
-<link rel="stylesheet" type="text/css" href="about.css">
-
-
-
 <html>
 
     <head>
         <title>About</title>
-        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="about.css">
+        
     </head>
 
 

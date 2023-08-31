@@ -1,12 +1,11 @@
 <?php
+require_once 'con.php';
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    require_once 'con.php';
-
-    $sql = "SELECT id, email ,password_hash FROM users WHERE username = ?";
+    $sql = "SELECT id, email, password_hash FROM users WHERE username = ?";
     $stmt = $dbCon->prepare($sql);
     $stmt->bind_param("s", $username);
     $stmt->execute();
@@ -21,18 +20,25 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             session_start();
             $_SESSION['username'] = $username;
             $_SESSION['email'] = $row->email;
-            header("Location: session.php");
-            exit();
+
+            if (isset($_POST['new_email']) && isset($_POST['new_password']) && isset($_POST['new_password_again']) && isset($_POST['old_password'])) {
+                
+            } else {
+                
+                header("Location: session.php");
+                exit();
+            }
         } else {
-            // Redirect with an error message
+            
             header("Location: LogOn.php?error=invalid");
             exit();
         }
     } else {
-        // Redirect with an error message
+        
         header("Location: LogOn.php?error=notfound");
         exit();
     }
 }
+
 
 ?>

@@ -2,12 +2,6 @@
 $thispage = basename(__FILE__);
 ?>
 <!DOCTYPE html>
-
-
-<link rel="stylesheet" type="text/css" href="Services.css">
-
-
-
 <html>
 
     <head>
